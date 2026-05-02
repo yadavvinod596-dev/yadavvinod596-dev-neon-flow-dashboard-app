@@ -170,7 +170,7 @@ function LoginScreen({ onAuth }) {
         <div className="login-card">
           <div className="brand-row" style={{ justifyContent: 'center', marginBottom: '8px' }}>
             <div className="brand-icon"><Layout size={26} /></div>
-            <h1 style={{ fontSize: '2rem' }}>NEON FLOW</h1>
+            <h1 style={{ fontSize: '2rem' }}>Producto</h1>
           </div>
           <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginBottom: '28px', fontSize: '0.9rem' }}>
             {mode === 'login' ? 'Sign in to your workspace' : 'Create your workspace'}
@@ -358,7 +358,7 @@ export default function App() {
           <div>
             <div className="brand-row">
               <div className="brand-icon"><Layout size={26} /></div>
-              <h1>NEON FLOW</h1>
+              <h1>Producto</h1>
             </div>
             <p>
               {taskStore.mode === 'firebase'
