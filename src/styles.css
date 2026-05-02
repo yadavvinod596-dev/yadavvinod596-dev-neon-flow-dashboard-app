@@ -697,3 +697,165 @@ h1 {
   padding: 10px 14px;
   font-size: 0.875rem;
 }
+
+/* ─── Mobile Browser Fixes ─────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .dashboard {
+    width: 100%;
+    padding: 16px 16px 60px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .brand-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .header p {
+    font-size: 0.8rem;
+  }
+
+  .header-actions {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .header-actions button {
+    flex: 1;
+    font-size: 0.85rem;
+    min-height: 40px;
+    padding: 0 12px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .stat-card {
+    min-height: 90px;
+    padding: 14px;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .filter-row {
+    width: 100%;
+    overflow-x: auto;
+    gap: 6px;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .filter-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-button {
+    white-space: nowrap;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    min-height: 34px;
+  }
+
+  .board {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .column {
+    border-radius: 12px;
+    padding: 14px;
+  }
+
+  .column-header h2 {
+    font-size: 0.85rem;
+  }
+
+  .task-card {
+    padding: 14px;
+  }
+
+  .task-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .modal {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 16px 16px 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .modal-backdrop {
+    align-items: flex-end;
+  }
+
+  .login-card {
+    padding: 28px 20px;
+    border-radius: 14px;
+  }
+
+  .login-container {
+    padding: 16px;
+    align-items: center;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .form-actions button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .primary-button,
+  .secondary-button {
+    min-height: 44px;
+  }
+
+  .toast {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    font-size: 0.85rem;
+  }
+}
