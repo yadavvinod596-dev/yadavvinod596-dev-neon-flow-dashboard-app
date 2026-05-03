@@ -14,6 +14,7 @@ import {
   X,
 } from 'lucide-react';
 import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
 import {
   addDoc,
   collection,
@@ -55,6 +56,7 @@ if (firebaseConfig) {
   firebaseApp = initializeApp(firebaseConfig);
   firebaseAuth = getAuth(firebaseApp);
   firebaseDb = getFirestore(firebaseApp);
+  getAnalytics(firebaseApp);
 }
 
 // ─── Local task store (no Firebase) ────────────────────────────────────────
